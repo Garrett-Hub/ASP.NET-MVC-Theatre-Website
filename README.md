@@ -1,10 +1,10 @@
 # ASP.NET MVC Theatre Website
-This is a collection of code that I contributed for a new website being built for a theatre in Portland.  For this project I built out the Production and ProductionPhoto models.  Both of these models had full CRUD functionality as well as some other features.  I configured these models to have a One-To-Many relationship in the database, since each ProductionPhoto has an associated Production it's linked to.
+This is a collection of code that I contributed for a new website being built for a theatre in Portland.  For this project I built out the [Production](#productions) and [ProductionPhoto](#photos) models.  Both of these models had full CRUD functionality as well as some other features.  I configured these models to have a One-To-Many relationship in the database, since each ProductionPhoto has an associated Production it's linked to.
 
-I also created a special type of Identity User called a Production Photographer that is responsible for managing ProductionPhotos.
+I also created a special type of Identity User called a [Production Photographer](#photographer) that is responsible for managing ProductionPhotos.
 
 ---
-## Production Model
+## Production Model {#productions}
 ![Production Index](production-index.png)
 *Index page for Production Model with search and pagination*
 
@@ -12,14 +12,14 @@ I also created a special type of Identity User called a Production Photographer 
 *Creating productions along with a new default Production Photo*
 
 ---
-## ProductionPhoto Model
+## ProductionPhoto Model {#photos}
 ![Production Photo Index](photos-index.png)
 *Index page for Production Photos*
 
 
 
 ---
-## ProductionPhotographer User
+## ProductionPhotographer User {#photographer}
 This project is using Identity to manage its users. I was tasked with creating a special kind of user called a "Production Photographer." This type of user would be responsible for managing ProductionPhotos.
 
 CRUD functionality for the ProductionPhoto model was restricted unless logged in as a ProductionPhotographer. To do this I created a custom `[Authorize]` attribute that redirects users to a Restricted Access page if they tried to access ProductionPhoto CRUD pages while not logged in as a ProductionPhotographer.
