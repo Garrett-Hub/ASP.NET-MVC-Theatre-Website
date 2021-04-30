@@ -3,14 +3,23 @@ This is a collection of code that I contributed for a new website being built fo
 
 I also created a special type of Identity User called a Production Photographer that is responsible for managing ProductionPhotos.
 
+---
 ## Production Model
+![Production Index](production-index.png)
+Lorem Ipsum Search & Pagination
 
+![Production Create](production-create.png)
+Creating productions with a new default Production Photo
 
+---
 ## ProductionPhoto Model
+![Production Photo Index](photos-index.png)
 
 
+
+---
 ## ProductionPhotographer User
-This project was using Identity to manage it's users. I was tasked with creating a special kind of user called a "Production Photographer." This type of user would be responsible for managing ProductionPhotos.
+This project is using Identity to manage its users. I was tasked with creating a special kind of user called a "Production Photographer." This type of user would be responsible for managing ProductionPhotos.
 
 CRUD functionality for the ProductionPhoto model was restricted unless logged in as a ProductionPhotographer. To do this I created a custom `[Authorize]` attribute that redirects users to a Restricted Access page if they tried to access ProductionPhoto CRUD pages while not logged in as a ProductionPhotographer.
 
