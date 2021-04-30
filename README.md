@@ -6,14 +6,15 @@ I also created a special type of Identity User called a Production Photographer 
 ---
 ## Production Model
 ![Production Index](production-index.png)
-Lorem Ipsum Search & Pagination
+*Index page for Production Model with search and pagination*
 
 ![Production Create](production-create.png)
-Creating productions with a new default Production Photo
+*Creating productions along with a new default Production Photo*
 
 ---
 ## ProductionPhoto Model
 ![Production Photo Index](photos-index.png)
+*Index page for Production Photos*
 
 
 
